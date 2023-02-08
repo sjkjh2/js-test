@@ -49,15 +49,29 @@
 
 
 // 논리 연산자(logical operator)
-const a = 1 === 2
-const b = 'AB' === 'AB'
-const c = true
+// const a = 1 === 2
+// const b = 'AB' === 'AB'
+// const c = true
 
-console.log(a)
-console.log(b)
-console.log(c)
+// console.log(a)
+// console.log(b)
+// console.log(c)
 
-console.log('&&: ', a && b && c) // 전부 true면 true 반환
-console.log('||: ', a || b || c) // 하나라도 true면 true 반환
-console.log('!: ', !a) // 반대 값을 반환
+// console.log('&&: ', a && b && c) // 전부 true면 true 반환
+// console.log('||: ', a || b || c) // 하나라도 true면 true 반환
+// console.log('!: ', !a) // 반대 값을 반환
 
+
+
+
+
+// 삼항 연산자(ternary operator)
+const a = 1 < 2
+
+if (a) {
+  console.log('참')
+} else {
+  console.log('거짓')
+}
+
+console.log(a ? '참' : '거짓')
