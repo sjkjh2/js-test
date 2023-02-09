@@ -195,13 +195,30 @@ import random from './getRandom'
 // 즉시실행함수
 // IIFE, Immediately-Invoked Function Expression
 
+// const a = 7
+// function double() {
+//   console.log(a * 2)
+// }
+// double();
+
+// 즉시 실행 함수
+// (function () {
+//   console.log(a * 2)
+// })()
+
+
+// 호이스팅(Hoisting)
+// 함수 선언부가 유효범위 최상단으로 끌어올려지는 현상
+
 const a = 7
+
+test()
+
+function test() {
+  double();
+}
+
 function double() {
   console.log(a * 2)
 }
-double();
 
-// 즉시 실행 함수
-(function () {
-  console.log(a * 2)
-})()
