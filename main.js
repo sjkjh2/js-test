@@ -155,6 +155,22 @@ import random from './getRandom'
 // Falsy(거짓 같은 값)
 // ㄹ민ㄷ, '', null, undefined, 0, -0, NAN
 
-if (false) {
-  console.log(123)
+// if (false) {
+//   console.log(123)
+// }
+
+
+
+// 함수 복습
+
+// 익명 함수
+// let ddd = function() {
+
+// }
+
+// 기명 함수
+function sum(x, y) { // 매개변수
+  return x + y
 }
+
+console.log(sum(7, 3))
