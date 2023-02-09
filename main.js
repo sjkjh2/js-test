@@ -132,10 +132,29 @@ import random from './getRandom'
 // 변수 유효범위 (Variable Scope)
 // var, let, const
 
-function scope() {
-  if (true) {
-    const a = 123
-    console.log(a)
-  }
+// function scope() {
+//   if (true) {
+//     const a = 123
+//     console.log(a)
+//   }
+// }
+// scope()
+
+
+
+// 형 변환 (Type conversion)
+
+// const a = 1
+// const b = '1'
+
+// console.log(a == b) // 동등 연산자 (형 변환이 자동으로 이루어짐)
+
+//  Truthy (참 같은 값)
+//  true, {}, [], 1, 2, 'false', -12, '3.14'....
+
+// Falsy(거짓 같은 값)
+// ㄹ민ㄷ, '', null, undefined, 0, -0, NAN
+
+if (false) {
+  console.log(123)
 }
-scope()
