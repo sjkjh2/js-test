@@ -169,8 +169,23 @@ import random from './getRandom'
 // }
 
 // 기명 함수
-function sum(x, y) { // 매개변수
-  return x + y
-}
+// function sum(x, y) { // 매개변수
+//   return x + y
+// }
 
-console.log(sum(7, 3))
+// console.log(sum(7, 3))
+
+
+
+// 화살표 함수
+// () => {}  vs  function () {}
+
+const double = function (x, y) {
+  return x * 2
+}
+console.log('double: ', double(7))
+
+// const doubleArrow = (x, y) => x * 2
+// const doubleArrow = x => x * 2
+const doubleArrow = x => ({name: 'sjkjh2'})
+console.log('doubleArrow: ', doubleArrow(7))
