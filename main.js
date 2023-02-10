@@ -247,11 +247,28 @@ import random from './getRandom'
 //     clearTimeout(timer)
 // })
 
-const timer = setInterval(() => {
-    console.log('sjkjh2')
-}, 3000)
+// const timer = setInterval(() => {
+//     console.log('sjkjh2')
+// }, 3000)
 
-const h1El = document.querySelector('h1')
-h1El.addEventListener('click', () => {
-    clearInterval(timer)
+// const h1El = document.querySelector('h1')
+// h1El.addEventListener('click', () => {
+//     clearInterval(timer)
+// })
+
+
+
+// 콜백(Callback)
+// 함수의 인수로 사용되는 함수
+
+// setTimeout(함수, 시간)
+
+function timeout(cb) {
+    setTimeout(() => {
+        console.log('sjkjh2')
+        cb()
+    }, 1000)
+}
+timeout(() => {
+    console.log('done!')
 })
