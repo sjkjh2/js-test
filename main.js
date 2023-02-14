@@ -80,7 +80,7 @@
 
 
 
-import random from './getRandom'
+// import random from './getRandom'
 
 // 조건문 (If statement)
 
@@ -263,12 +263,110 @@ import random from './getRandom'
 
 // setTimeout(함수, 시간)
 
-function timeout(cb) {
-    setTimeout(() => {
-        console.log('sjkjh2')
-        cb()
-    }, 1000)
+// function timeout(cb) {
+//     setTimeout(() => {
+//         console.log('sjkjh2')
+//         cb()
+//     }, 1000)
+// }
+// timeout(() => {
+//     console.log('done!')
+// })
+
+
+
+// 생성자 함수(protype)
+// const kim = {
+//     firstName: 'Kim', 
+//     lastName: 'Jae Hwan',
+//     getFullName: function() {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+// console.log(kim.getFullName())
+
+// const amy = {
+//     firstName: 'Amy', 
+//     lastName: 'Clarke',
+//     getFullName: function() {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+// console.log(amy.getFullName())
+
+// const neo = {
+//     firstName: 'Neo', 
+//     lastName: 'Smith',
+//     getFullName: function() {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+// console.log(neo.getFullName())
+
+// function User(first, last) {
+//     this.firstName = first
+//     this.lastName = last
+// }
+// User.prototype.getFullName = function () {
+//     return `${this.firstName} ${this.lastName}`
+// }
+
+// const kim = new User('Jae Hwan', 'Kim')
+// const amy = new User('Amy', 'Clarke')
+// const neo = new User('Neo', 'Smith')
+// console.log(kim.getFullName())
+// console.log(kim)
+// console.log(amy)
+// console.log(neo)
+
+
+
+// this
+// 일반 함수는 호출 위치에서 따라 this 정의!
+// 화살표 함수는 자신이 선언된 함수 범위에서  this 정의!
+
+// const heropy = {
+//     name: 'Heropy',
+//     normal: function () {
+//         console.log(this.name)
+//     },
+//     arrow: () => {
+//         console.log(this.name)
+//     }
+// }
+// heropy.normal()
+// heropy.arrow()
+
+// const amy = {
+//     name: 'Amy',
+//     normal: heropy.normal,
+//     arrow: heropy.arrow
+// }
+// amy.normal()
+// amy.arrow()
+
+// function User(first, last) {
+//     this.name = name
+// }
+// User.prototype.normal = function () {
+//     console.log(this.name)
+// }
+// User.prototype.arrow = () => {
+//     console.log(this.name)
+// }
+
+// const heropy = new User('Heropy')
+
+// heropy.normal()
+// heropy.arrow()
+
+
+const timer = {
+    name: 'Heropy',
+    timeout: function () {
+        setTimeout(() => {
+            console.log(this.name)
+        }, 2000)
+    }
 }
-timeout(() => {
-    console.log('done!')
-})
+timer.timeout()
